@@ -183,7 +183,7 @@ body{background-image: url(subtle_stripes.png); background-color: rgb(181, 181, 
 
 .cap1 > div {opacity: 0.85;filter:alpha(opacity=85);background-color:rgb(0, 191, 172);}
 
-.cap2 > div {opacity: 0.85;filter:alpha(opacity=85);background-color:rgb(219, 172, 0);}
+.cap2 > div {opacity: 0.85;filter:alpha(opacity=85);background-color: #003300;}
 
 .cap3 > div {opacity: 0.85;filter:alpha(opacity=85);}
 
