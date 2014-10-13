@@ -227,7 +227,7 @@ h2{font-weight: normal; font-style: normal; ;font-family: Terminal Dosis Light;}
 
 #divHeaderLine3{margin-top: 37px; line-height: 21px; }
 
-#divFooter{background-image:-moz-linear-gradient(bottom,#006400,#003300);filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#003300, endColorstr=#006400);background-image:-o-linear-gradient(bottom,#003300,#006400);background-image:-webkit-gradient(linear,left top, left bottom,from(#ab0b00),to(#bf0d00));background-image:-webkit-linear-gradient(bottom,#ab0b00,#bf0d00);background-image:linear-gradient(bottom,#ab0b00,#bf0d00);}
+#divFooter{background-image:-moz-linear-gradient(bottom,#006400,#003300);filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#003300, endColorstr=#006400);background-image:-o-linear-gradient(bottom,#006400,#003300);background-image:-webkit-gradient(linear,left top, left bottom,from(#006400),to(#003300));background-image:-webkit-linear-gradient(bottom,#006400,#003300);background-image:linear-gradient(bottom,#006400,#003300);}
 
 a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
