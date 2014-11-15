@@ -95,7 +95,7 @@ margin-right:7px;margin-bottom:7px;float:left;
 
 /* Responsive Image */
 
-img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border: 1px solid rgba(0, 0, 0, 0.2);box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);background-color: #fff;padding: 4px;}
 
 /* Responsive Video from Zurb Foundation. Copyright (c) 2011 ZURB, http://www.zurb.com/ License: MIT */
 
@@ -205,7 +205,7 @@ h1{font-weight: normal; font-style: normal; letter-spacing: 0px; line-height: 58
 
 .sidebox-title{font-weight: normal; font-style: normal; font-size: 20px; letter-spacing: 0px; line-height: 40px; font-family: Terminal Dosis Light; color: rgb(51, 51, 51);}
 
-.sidebox a{color: #003300; font-family: Maven Pro;}
+.sidebox a{color: #003300; font-family: Terminal Dosis Light; font-weight: normal; font-style: normal; font-size: 20px; letter-spacing: 0px; line-height: 40px;}
 
 #divFooter{border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; background-color: #003300; color: rgb(227, 227, 227); font-family: Maven Pro; text-transform: none; font-size: 12px; letter-spacing: 0px; line-height: 22px; background-image: -webkit-linear-gradient(top, #003300, rgb(171, 11, 0));}
 
@@ -215,7 +215,7 @@ h1{font-weight: normal; font-style: normal; letter-spacing: 0px; line-height: 58
 
 #divFooter h3{font-family: Terminal Dosis Light; font-weight: normal; font-style: normal; font-size: 19px; line-height: 45px; color: rgb(227, 227, 227);}
 
-h2{font-weight: normal; font-style: normal; ;font-family: Terminal Dosis Light;}
+h2{font-weight: normal; font-style: normal; font-family: Terminal Dosis Light; font-size: normal;}
 
 .transparent-bg{-moz-box-shadow: rgba(0, 0, 0, 0.294118) 0px 1px 4px; -webkit-box-shadow: rgba(0, 0, 0, 0.294118) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.294118) 0px 1px 4px;   background-color: rgb(255, 255, 255); border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;}
 

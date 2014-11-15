@@ -9,7 +9,7 @@
                         <div class="span6">
 
                             <div id="divHeaderText" class="page-content">
-                         
+				  
                                 <div id="divHeaderLine1">{{ theme.headertext }}</div><br />
                                 <div id="divHeaderLine2">{{ theme.secondlineheader }}</div><br />
                                 <div id="divHeaderLine3"><a class="btn btn-large btn-secondary" href="{{ theme.secondarybuttonlink }}">{{ theme.secondarybuttontext }}</a>    <a class="btn btn-large btn-primary" href="{{ theme.primarybuttonlink }}">{{ theme.primarybuttontext }}</a></div>
@@ -51,24 +51,14 @@
                     <br />
 
                     <div class="row-fluid">
+			{% setcontent stuffs='page' %}
+			{% for stuff in stuffs %}
                         <div class="span4">
-                        {% setcontent stuff='page/kids-carriages' %}
                             <h2>{{ stuff.title }}</h2>
-                            <img src="{{ stuff.image|thumbnail(150,90,c) }}" class="img-polaroid" style="margin:5px 0px 15px;">                
+                            {%if stuff.image %}<img src="{{ stuff.image|thumbnail(150,90,c) }}" class="img-polaroid" style="margin:5px 0px 15px;">{% endif %}
                             {{ stuff.teaser }}<br /><a href="{{ stuff.link }}">Read More &raquo;</a>
                         </div>
-                        <div class="span4">
-                        {% setcontent stuff='page/hotels' %}
-                            <h2>{{ stuff.title }}</h2>
-                            <img src="{{ stuff.image|thumbnail(150,90,c) }}" class="img-polaroid" style="margin:5px 0px 15px;">                
-                            {{ stuff.teaser }}<br /><a href="{{ stuff.link }}">Read More &raquo;</a>
-                        </div>
-                        <div class="span4">
-                        {% setcontent stuff='page/pricelist' %}
-                            <h2>{{ stuff.title }}</h2>
-                            <img src="{{ stuff.image|thumbnail(150,90,c) }}" class="img-polaroid" style="margin:5px 0px 15px;">                
-                            {{ stuff.teaser }}<br /><a href="{{ stuff.link }}">Read More &raquo;</a>
-                        </div>
+			{% endfor %}
                       
                     </div>  
 

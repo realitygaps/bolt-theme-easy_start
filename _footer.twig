@@ -10,7 +10,9 @@
                
                     <h3>{{ about.title }}</h3>
 
-                    {{ about.teaser }}
+                    {{ about.teaser }}<br /><a href="{{ stuff.link }}">Read More &raquo;</a>
+                    
+                    
                     
 
 
@@ -25,18 +27,18 @@
                         <span style="text-transform:none;">{{ item.values.datepublish|localdate("%A %B %e") }}</span>
                     </p>
                     {% endfor %}
-                    <p>
-                        <a href="/entries" title="">VIEW ALL POSTS</a>
-                    </p>
+                       <br /><a href="/entries" title="">View all posts &raquo;</a>
+                    
 
                 </div>
                 <div class="span3" id="footerArea3">
-           {% setcontent welfare='page/animal-welfare' %}
-               
-                    <h3>{{ welfare.title }}</h3>
+		{% setcontent stuff='pages/random/1' %}
+                {% for item in stuff %}
+                    <h3>{{ item.title }}</h3>
 
-                    {{ welfare.teaser }}
-                    
+                    {{ item.teaser }}
+                {% endfor %}   
+		   <br /><a href="/pages" title="">All pages &raquo;</a>
                   
                 </div>
                 <div class="span3" id="footerArea4">
@@ -77,10 +79,9 @@
                     </p>
 
                     <p class="social_bookmarks">
-                        <a href="{{ theme.facebooklink }}" target="_blank"><i class="social foundicon-facebook"></i> Facebook</a>
-			<a href="{{ theme.twitterlink }}" target="_blank"><i class="social foundicon-twitter"></i> Twitter</a>
-			<a href="{{ theme.pinterestlink }}" target="_blank"><i class="social foundicon-pinterest"></i> Pinterest</a>
-			<a href="{{ theme.rsslink }}" target="_blank"><i class="social foundicon-rss"></i> Rss</a>
+                        <a href="{{ theme.facebook }}" target="_blank"><i class="social foundicon-facebook"></i> Facebook</a>
+			<a href="{{ theme.twitter }}" target="_blank"><i class="social foundicon-twitter"></i> Twitter</a>
+			<a href="{{ theme.pinterest }}" target="_blank"><i class="social foundicon-pinterest"></i> Pinterest</a>
                     </p>
                 </div>
             </div>

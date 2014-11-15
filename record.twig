@@ -11,9 +11,10 @@
                 <div class="span8" id="divMain">
 
                     <h1>{{ record.title }}</h1>
+                    {% if record.image %}<img src="{{ record.image|thumbnail(531,293) }}">{% endif %}
                     {{ record.body }}
                 </div>
-               {% include '_sidebar.twig' %}
+               {% include '_aside.twig' %}
             </div>
 
             <div id="footerInnerSeparator"></div>
